@@ -1,0 +1,110 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>PEObpiw-О сайте</title>
+    <link rel="icon" href="IMG/logo.png">
+    <link rel="stylesheet" href="CSS/stylemain.css">
+</head>
+<body>
+    <canvas id="BackgroundMatrix"></canvas>
+    <button id="ToTop" onclick="go();">
+    </button>
+    <div class="app">
+        <div class="header">
+            <a href="index.html">
+                <div class="SiteIcon">
+                    PEObpiw
+                </div>
+            </a>
+            <div class="MainMenuContainer">
+                <div class="MenuButtons">
+                    <a href="index.html">
+                        <div class="MainButton">
+                            Даркнет
+                        </div>
+                    </a>
+                    <a href="main.html">
+                        <div class="MainButton">
+                            ToR браузер
+                        </div>
+                    </a>
+                    <a href="siteinfo.html">
+                        <div class="MainButton">
+                            О сайте
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="AccountMenu" onclick="OpenAutorization();">
+                <img src="IMG/cat.png">
+            </button>
+        </div>
+        <div class="wrapper">
+            <div class="main_conteiner">
+                <div class="page" id="MainPage">
+                    <div class="page_inf_block">
+                        <h1>
+                            О сайте.
+                        </h1>
+                        <p>
+                            Данный сайт был разработан для информирования пользователей интернета о даркнете. На нем собрана информация с разных источников, взятая как из интернет рессурсов так и из печатных.
+                        </p>
+                    </div>
+                    <div class="page_inf_block">
+                        <p>
+                            Если Вами были замечены ошибки или неточности в представленой статье то Вы можете написать письмо на прямую разработчику:
+                        </p>
+                        <div class="form">
+                            <form action="#" id="form" class="form_conteiner">
+                                <div class="form_element">
+                                    <label for="form_name" class="form_label">Имя*</label>
+                                    <input type="text" id="form_name" name="name" class="form_input _req">
+                                </div>
+                                <div class="form_element">
+                                    <label for="form_mail" class="form_label">E-mail*</label>
+                                    <input type="text" id="form_mail" name="mail" class="form_input _req _email">
+                                </div>
+                                <div class="form_element">
+                                    <label for="form_message" class="form_label">
+                                        Сообщение разработчику
+                                    </label>
+                                    <textarea id="form_message" name="message" class="form_input"></textarea>
+                                </div>
+                                <button type="submit" class="form_button">
+                                    Отправить
+                                </button>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            
+        </footer>
+        <div id="autorize">
+            <div class="AutorizeMenu">
+                <div id="CloseMenuAutorize" onclick="CloseAutorization();">
+                
+                </div>
+            </div>
+            <div id="CloseMenuAutorizeZone1" onclick="CloseAutorization();">
+                <div id="CloseMenuAutorizeZone2" onclick="CloseAutorization();">
+            
+                </div>
+                <div id="CloseMenuAutorizeZone3" onclick="CloseAutorization();">
+                
+                </div>
+                <div id="CloseMenuAutorizeZone4" onclick="CloseAutorization();">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/FormWorker.js"></script>
+    <script src="JS/BackgroundMatrix.js"></script>
+    <script src="JS/ScrollToTop.js"></script>
+    <script src="JS/Autorization.js"></script>
+</body>
+</html>
