@@ -1,0 +1,426 @@
+@font-face {
+    font-family: "IconSerif";
+    src: url(FONTS/PumpkinWebPersonalUse.otf);
+}
+@font-face {
+    font-family: MainSerif;
+    src: url(FONTS/ShantellSans-SemiBoldItalic.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    font-size: 24px;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-family: MainSerif;
+}
+html{
+    max-width: 100vw;
+    overflow-x: hidden;
+    
+    scroll-behavior: smooth;
+}
+a{
+    margin: 0;
+	text-decoration: none;
+}
+::-webkit-scrollbar{
+    width: 1vw;
+    height: 0;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #555555;
+    border: solid 0.15vw #303033;
+    border-radius: 0.3vw;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #444444;
+}
+::-webkit-scrollbar-track{
+    background-color: #303033;
+}
+
+.app{
+    width: 100vw;
+}
+.header{
+    position: fixed;
+    display: flex;
+    width: 99.1vw;
+    height: 7.5vh;
+    background-color: #404044;
+    border-bottom: solid 1px #404044;
+    z-index: 999;
+    box-shadow: 0px 4px 10px 4px #202022;
+    box-shadow: 0px 0px 0.5vw 0.25vw #202022 inset;
+}
+.MenuButtons{
+    position: relative;
+    background-color: #00000000;
+    height: 100%;
+    width: 1152px;
+    max-width: 70vw;
+    min-width: 60vw;
+    display:table;
+}
+.MenuButtons a{
+    display: block;
+	display: inline-block;
+    height: 100%;
+    width: 33%;
+	margin: 0;
+	text-decoration: none;
+	color: #dddddd;
+	border-left: 3px solid #00000000;
+}
+.MenuButtons a:hover{
+    background-image: linear-gradient(0deg,#202022,#20202200);
+}
+.MainButton{
+    display: flex;
+    justify-content: center;
+    padding-top: 1vh;
+    font-size: 2vw;
+    color: #202022;
+    font-family: MainSerif;
+}
+.SiteIcon{
+    position: absolute;
+    background-color: #00000000;
+    min-width: 9vw;
+    height: 100%;
+    padding-top: 0.6vh;
+    padding-left: 1vw;
+    margin-right: 1vw;
+    font-family:"IconSerif";
+    font-size: 6vh;
+    font-style: italic;
+    font-weight: 900;
+    color: #202022;
+    z-index: 100;
+}
+.SiteIcon:hover{
+    color: #101011;
+    cursor: pointer;
+}
+.MainMenuContainer{
+    position: relative;
+    background-color: #55555500;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    width: 99.1vw;
+    min-width: 10vw;
+    height: 100%;
+}
+.AccountMenu{
+    position: absolute;
+    background-color: #202022;
+    margin-top: 0.75vh;
+    right: 0.75vw;
+    border: 0;
+    border-radius: 50%;
+    width: 6vh;
+    height: 6vh;
+}
+.AccountMenu img{
+    width: 4.8vh;
+    height: 4.8vh;
+}
+.AccountMenu:hover{
+    background-color: #101011;
+    cursor: pointer;
+}
+.wrapper{
+    background-color: #202022;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-bottom: 2.5vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    width: 99.1vw;
+    min-height: 81vh;
+}
+.main_conteiner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 0;
+    width: 1152px;
+    max-width: 96vw;
+    min-height: 964px;
+}
+.page{
+    display:inline-block;
+    background-color: #40404400;
+    width: 100%;
+    min-height: 964px;
+    max-width: 98vw;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 99.1vw;
+    height: 20vh;
+    border-top: solid 1px #404044;
+    box-shadow: 0px 0px 8px 4px #202022 inset;
+    background-color: #404044;
+}
+.page_inf_block{
+    padding: 16px;
+    margin-bottom: 2.5vh;
+    font-size: 28px;
+    text-align: justify;
+    background-color: #404044;
+    box-shadow: 0px 0px 8px 2px #202022 inset;
+    width: 100%;
+    border-radius: 2px;
+    border: solid 1px #404044;
+    color: #dddddd;
+}
+.page_inf_block h1{
+    font-size: 36px;
+    line-height: 1.7em;
+}
+.page_inf_block p{
+    text-indent: 1.5em;
+    line-height: 1.3em;
+}
+.page_inf_block img{
+    margin-left: 1.3vh;
+    margin-right: 1.3vh;
+    margin-top: 1vh;
+    border: solid 1px #000;
+    border-radius: 1vh;
+}
+.AutorizeMenu{
+    position: fixed;
+    left: 30%;
+    top: 25%;
+    width: 40%;
+    height: 50%;
+    border: 2px solid #404044;
+    background-color: #404044;
+    box-shadow: 0px 0px 8px 2px #202022 inset;
+}
+
+#ToTop{
+    opacity: 0;
+    position: fixed;
+    background-color: #77777700;
+    border: 0.4vh solid #777777;
+    min-width: 3vh;
+    min-height: 3vh;
+    width: 3vh;
+    height: 3vh;
+    bottom: 3%;
+    right: 3%;
+    border-radius: 25%;
+    pointer-events:none;
+    transition:all 0.5s ease-in-out;
+    z-index: 999;
+}
+#ToTop::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-25%) rotate(45deg);
+    min-width: 0.6vh;
+    min-height: 0.6vh;
+    width: 1.2vh;
+    height: 1.2vh;
+    border-top: 0.4vh solid #777777;
+    border-left: 0.4vh solid #777777;
+    transition:all 0.5s ease-in-out;
+    
+}
+#ToTop:hover{
+    border-color: #ffffff;
+    cursor: pointer;
+    transition:all 0.5s ease-in-out;
+}
+#ToTop:hover::after{
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    top: 40%;
+    transition: all 0.5s ease-in-out;
+}
+#BackgroundMatrix{
+    position:fixed;
+    opacity: 0;
+    z-index: -10;
+}
+#MainMenu{
+    position: relative;
+    display:inline-block;
+    margin-left: 24px;
+    width: 360px;
+    height: 100%;;
+}
+#p1::before{
+    display: block;
+    content: "";
+    height: 11.7vh;
+    margin: -11.7vh 0 0;
+}
+#p2::before{
+    display: block;
+    content: "";
+    height: 11.7vh;
+    margin: -11.7vh 0 0;
+}
+#p3::before{
+    display: block;
+    content: "";
+    height: 11.7vh;
+    margin: -11.7vh 0 0;
+}
+#p4::before{
+    display: block;
+    content: "";
+    height: 11.7vh;
+    margin: -11.7vh 0 0;
+}
+#autorize{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000075;
+    z-index: 1000;
+}
+#CloseMenuAutorize{
+    position:absolute;
+    right: 0.7vh;
+    top: 0.7vh;
+    width: 3vh;
+    height: 3vh;
+    opacity: 0.5;
+}
+#CloseMenuAutorize::after,#CloseMenuAutorize::before{
+    position: absolute;
+    left: 50%;
+    content: ' ';
+    height: 2.5vh;
+    width: 0.5vh;
+    background-color: #101011;
+}
+#CloseMenuAutorize::after{
+    transform: rotate(45deg);
+}
+#CloseMenuAutorize::before{
+    transform: rotate(-45deg);
+}
+#CloseMenuAutorize:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+#CloseMenuAutorizeZone1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 25vh;
+}
+#CloseMenuAutorizeZone2{
+    position: absolute;
+    left: 0;
+    top: 75vh;
+    width: 100vw;
+    height: 25vh;
+}
+#CloseMenuAutorizeZone3{
+    position: absolute;
+    left: 0;
+    top: 25vh;
+    width: 30vw;
+    height: 50vh;
+}
+#CloseMenuAutorizeZone4{
+    position: absolute;
+    left: 69.7vw;
+    top: 25vh;
+    width: 30vw;
+    height: 50vh;
+}
+
+.form{
+    max-width: 40vw;
+    margin: 0 auto;
+}
+
+.form *{
+    outline: none;
+}
+.form_conteiner{
+    position: relative;
+}
+.form_conteiner::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000000;
+    opacity: 0;
+    visibility: hidden;
+}
+.form_conteiner._sending::after{
+    opacity: 1;
+    visibility: visible;
+}
+.form_element{
+    margin-bottom: 2vh;
+}
+.form_label{
+    display: block;
+}
+.form_input{
+    width: 100%;
+    height: 4vh;
+    border-radius: 1vw;
+    border: #00000000;
+    font-size: 2vh;
+    transition: all 0.5s ease 0s;
+}
+.form_input._error{
+    box-shadow: 0 0 0.5vh red;
+}
+
+.form_input:focus{
+    box-shadow: 0 0 0.5vh #fff;
+}
+textarea.form_input{
+    min-height: 10vh;
+    resize: vertical;
+    font-size: 2vh;
+    padding: 0.5vh;
+}
+.form_button{
+    position: relative;
+    width: 100%;
+    height: 4vh;
+    border: #00000000;
+    border-radius: 1vw;
+    cursor: pointer;
+    top: 0;
+    box-shadow: 0 0.3vh 0 #000;
+    transition: all 0.3s ease-in-out 0s;
+}
+.form_button:hover{
+    background-color: #808088;
+}
+.form_button:active{
+    top: 0.1vh;
+    background-color: #808088;
+    box-shadow: 0 0.2vh 0 #000;
+}
