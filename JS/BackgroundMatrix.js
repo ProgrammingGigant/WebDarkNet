@@ -1,7 +1,6 @@
 var BackgroundMatrix=document.getElementById("BackgroundMatrix");
 var NavPage=document.getElementById("NavPage");
 var NavPage=document.getElementById("NavPage");
-var MainMenu=document.getElementById("MainMenu");
 
 var ctx=BackgroundMatrix.getContext("2d");
 
@@ -20,12 +19,10 @@ const resize = () => {
     if(MainPage.offsetWidth+400 >=  window.innerWidth)
     {
         NavPage.style.display="none";
-        MainMenu.style.display="none";
     }
     else
     {
         NavPage.style.display="inline-block";
-        MainMenu.style.display="inline-block";
     }
     BackgroundMatrix.width = innerWidth;
     BackgroundMatrix.height = innerHeight;

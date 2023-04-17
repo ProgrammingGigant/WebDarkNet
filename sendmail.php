@@ -10,9 +10,13 @@
     $mail->setLanguage('ru','phpmailer/language/');
     $mail->IsHTML(true);
 
-    $mail->setForm('info@fls.guru','Пользователь');
+    $mail->setForm('info@fls.guru');
     $mail->setAddress('p0tapov.yegor@yandex.ru');
     $mail->Subject="Сайт";
+
+
+    $body='<h1>Письмо</h1>';
+
 
     if(trim(!empty($_POST['name']))){
         $body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
@@ -34,6 +38,6 @@
 
     $response = ['message'=>$message];
 
-    header('Content-type: application.json');
+    header('Content-type: application/json');
     echo json_encode($response);
 ?>

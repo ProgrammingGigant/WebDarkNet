@@ -192,12 +192,14 @@ a{
     text-indent: 1.5em;
     line-height: 1.3em;
 }
-.page_inf_block img{
-    margin-left: 1.3vh;
-    margin-right: 1.3vh;
-    margin-top: 1vh;
-    border: solid 1px #000;
-    border-radius: 1vh;
+.page_inf_block li{
+    margin-left: 2vw;
+}
+.page_inf_block a{
+    color: #dddddd;
+}
+.page_inf_block a:hover{
+    color: #aaaaaa;
 }
 .AutorizeMenu{
     position: fixed;
@@ -352,7 +354,8 @@ a{
 }
 
 .form{
-    max-width: 40vw;
+    max-width: 96vw;
+    width: 600px;
     margin: 0 auto;
 }
 
@@ -362,22 +365,6 @@ a{
 .form_conteiner{
     position: relative;
 }
-.form_conteiner::after
-{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #00000000;
-    opacity: 0;
-    visibility: hidden;
-}
-.form_conteiner._sending::after{
-    opacity: 1;
-    visibility: visible;
-}
 .form_element{
     margin-bottom: 2vh;
 }
@@ -386,16 +373,81 @@ a{
 }
 .form_input{
     width: 100%;
-    height: 4vh;
-    border-radius: 1vw;
-    border: #00000000;
+    height: 40px;
+    padding-left: 0.5vw;
+    border-radius: 10px;
+    background-color: #404044;
+    border: solid #404044 1px;
+    box-shadow: 0px 4px 10px 4px #202022;
+    box-shadow: 0px 0px 0.5vw 0.25vw #202022 inset;
     font-size: 2vh;
     transition: all 0.5s ease 0s;
 }
-.form_input._error{
-    box-shadow: 0 0 0.5vh red;
+.form_input:focus{
+    box-shadow: 0 0 0.5vh #fff;
+}
+textarea.form_input{
+    min-height: 10vh;
+    resize: vertical;
+    font-size: 2vh;
+    padding: 0.5vh;
+}
+.form_button{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #404044;
+    border: solid #404044 1px;
+    box-shadow: 0px 4px 10px 4px #202022 inset;
+    box-shadow: 0px 0px 0.5vw 0.25vw #202022;
+    border-radius: 10px;
+    cursor: pointer;
+    top: 0;
+    font-size: 1.5vw;
+    transition: all 0.3s ease-in-out 0s;
+}
+.form_button:hover{
+    box-shadow: 0px 3px 7.5px 3px #202022 inset;
+    box-shadow: 0px 0px 0.375vw 0.1875vw #202022;
+    font-size: 1.4vw;
+}
+.form_button:active{
+    box-shadow: 0px 2px 5px 2px #202022;
+    box-shadow: 0px 0px 0.25vw 0.125vw #202022 inset;
+    font-size: 1.2vw;
 }
 
+.autorizeform{
+    max-width: 30vw;
+    min-width: 30vw;
+    margin: 0 auto;
+    padding-top: 6vh;
+}
+.autorizeform *{
+    font-size: 1.5vw;
+}
+.form_conteiner{
+    position: relative;
+    width: 100%;
+}
+.form_element{
+    margin-bottom: 2vh;
+    width: 100%;
+}
+.form_label{
+    display: block;
+}
+.form_input{
+    width: 100%;
+    height: 4vh;
+    padding-left: 0.5vw;
+    border-radius: 0.5vw;
+    background-color: #404044;
+    border: solid #404044 1px;
+    box-shadow: 0px 4px 10px 4px #202022;
+    box-shadow: 0px 0px 0.5vw 0.25vw #202022 inset;
+    font-size: 2vh;
+}
 .form_input:focus{
     box-shadow: 0 0 0.5vh #fff;
 }
@@ -409,18 +461,50 @@ textarea.form_input{
     position: relative;
     width: 100%;
     height: 4vh;
-    border: #00000000;
-    border-radius: 1vw;
+    background-color: #404044;
+    border: solid #404044 1px;
+    box-shadow: 0px 4px 10px 4px #202022 inset;
+    box-shadow: 0px 0px 0.5vw 0.25vw #202022;
+    border-radius: 0.5vw;
     cursor: pointer;
     top: 0;
-    box-shadow: 0 0.3vh 0 #000;
-    transition: all 0.3s ease-in-out 0s;
+    font-size: 1.5vw;
 }
 .form_button:hover{
-    background-color: #808088;
+    box-shadow: 0px 3px 7.5px 3px #202022 inset;
+    box-shadow: 0px 0px 0.375vw 0.1875vw #202022;
+    font-size: 1.4vw;
 }
 .form_button:active{
-    top: 0.1vh;
-    background-color: #808088;
-    box-shadow: 0 0.2vh 0 #000;
+    box-shadow: 0px 2px 5px 2px #202022;
+    box-shadow: 0px 0px 0.25vw 0.125vw #202022 inset;
+    font-size: 1.2vw;
 }
+
+.form_rem_btn{
+    display: none;
+}
+.form_rem_btn:checked + .remember_btn_label::before{
+    box-shadow: 0px 2px 5px 2px #202022;
+    box-shadow: 0px 0px 0.5vw 0.25vw #202022 inset;
+}
+.remember_btn_label{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.remember_btn_label::before{
+    content: "";
+    align-self: flex-start;
+    width: 1.2vw;
+    height: 1.2vw;
+    background-color: #404044;
+    border: solid 1px #404044;
+    box-shadow: 0px 4px 10px 4px #202022 inset;
+    box-shadow: 0px 0px 0.5vw 0.25vw #202022;
+    border-radius: 0.2vw;
+    margin-right: 0.5vw;
+}
+

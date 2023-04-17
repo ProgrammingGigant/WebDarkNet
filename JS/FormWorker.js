@@ -1,10 +1,3 @@
-console.log(121);
-
-"use strict"
-
-document.addEventListener('DOMContentLoaded',function()
-{
-
 const form=document.getElementById("form");
 form.addEventListener("submit",formSend);
 
@@ -19,9 +12,9 @@ async function formSend(e)
     if(Error===0)
     {
         form.classList.add("_sending");
-        let response = await fetch("sendmail.php", {
-            method: "POST",
-            body: formData
+        let response=await fetch('sendmail.php', {
+        method: 'post',
+        body: formData
         });
         if(response.ok)
         {
@@ -86,4 +79,3 @@ function emailTest(input)
 {
     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 }
-});
