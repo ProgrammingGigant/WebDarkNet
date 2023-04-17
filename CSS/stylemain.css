@@ -137,7 +137,7 @@ a{
     cursor: pointer;
 }
 .wrapper{
-    background-color: #202022;
+    background-color: #20202200;
     display: flex;
     justify-content: center;
     padding-top: 10vh;
@@ -256,7 +256,7 @@ a{
 }
 #BackgroundMatrix{
     position:fixed;
-    opacity: 0;
+    opacity: 1;
     z-index: -10;
 }
 #MainMenu{
@@ -439,7 +439,7 @@ textarea.form_input{
 }
 .form_input{
     width: 100%;
-    height: 40px;
+    height: 4vh;
     padding-left: 0.5vw;
     border-radius: 0.5vw;
     background-color: #404044;
@@ -452,7 +452,7 @@ textarea.form_input{
     box-shadow: 0 0 0.5vh #fff;
 }
 textarea.form_input{
-    min-height: 100px;
+    min-height: 10vh;
     resize: vertical;
     font-size: 2vh;
     padding: 0.5vh;
@@ -460,7 +460,7 @@ textarea.form_input{
 .form_button{
     position: relative;
     width: 100%;
-    height: 40px;
+    height: 4vh;
     background-color: #404044;
     border: solid #404044 1px;
     box-shadow: 0px 4px 10px 4px #202022 inset;
@@ -468,8 +468,7 @@ textarea.form_input{
     border-radius: 0.5vw;
     cursor: pointer;
     top: 0;
-    color: #fff;
-    font-size: 28px;
+    font-size: 1.5vw;
 }
 .form_button:hover{
     box-shadow: 0px 3px 7.5px 3px #202022 inset;
@@ -477,65 +476,6 @@ textarea.form_input{
     font-size: 1.4vw;
 }
 .form_button:active{
-    box-shadow: 0px 2px 5px 2px #202022;
-    box-shadow: 0px 0px 0.25vw 0.125vw #202022 inset;
-    font-size: 1.2vw;
-}
-
-.autorizeform{
-    max-width: 30vw;
-    min-width: 30vw;
-    margin: 0 auto;
-    padding-top: 6vh;
-}
-.autorizeform *{
-    font-size: 1.5vw;
-}
-.form_conteiner1{
-    position: relative;
-    width: 100%;
-}
-.form_element1{
-    margin-bottom: 2vh;
-    width: 100%;
-}
-.form_label1{
-    display: block;
-}
-.form_input1{
-    width: 100%;
-    height: 4vh;
-    padding-left: 0.5vw;
-    border-radius: 0.5vw;
-    background-color: #404044;
-    border: solid #404044 1px;
-    box-shadow: 0px 4px 10px 4px #202022;
-    box-shadow: 0px 0px 0.5vw 0.25vw #202022 inset;
-    font-size: 2vh;
-}
-.form_input1:focus{
-    box-shadow: 0 0 0.5vh #fff;
-}
-
-.form_button1{
-    position: relative;
-    width: 100%;
-    height: 4vh;
-    background-color: #404044;
-    border: solid #404044 1px;
-    box-shadow: 0px 4px 10px 4px #202022 inset;
-    box-shadow: 0px 0px 0.5vw 0.25vw #202022;
-    border-radius: 0.5vw;
-    cursor: pointer;
-    top: 0;
-    font-size: 1.5vw;
-}
-.form_button1:hover{
-    box-shadow: 0px 3px 7.5px 3px #202022 inset;
-    box-shadow: 0px 0px 0.375vw 0.1875vw #202022;
-    font-size: 1.4vw;
-}
-.form_button1:active{
     box-shadow: 0px 2px 5px 2px #202022;
     box-shadow: 0px 0px 0.25vw 0.125vw #202022 inset;
     font-size: 1.2vw;
