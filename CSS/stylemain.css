@@ -508,3 +508,76 @@ textarea.form_input{
     margin-right: 0.5vw;
 }
 
+.footercontainer{
+    position: relative;
+    width: 70vw;
+    height: 70%;
+    margin: 0 auto;
+    padding-top: 2%;
+    background-color: #00000000;
+    border-bottom: solid 2px #000;
+}
+.footercontainer p{
+    text-align: center;
+    font-size: 2vh;
+}
+.footercontainer hr{
+    border: 1px #000 solid;
+}
+.bottomfootercontainer{
+    position: relative;
+    width: 70vw;
+    height: 30%;
+    margin: 0 auto;
+    background-color: #00000000;
+}
+.copyright{
+    position: absolute;
+    left: 1vw;
+    padding-top: 1.2%;
+    display: inline-block;
+    font-size: 1.8vh;
+}
+.Links{
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    right: 1vw;
+}
+#footerimg0{
+    display: inline-block;
+    position: absolute;
+    bottom: 1.3vh;
+    right: 7vw;
+    width: 4vh;
+    height: 4vh;
+}
+#footerimg0 img{
+    width: 4vh;
+    height: 4vh;
+}
+#footerimg1{
+    display: inline-block;
+    position: absolute;
+    bottom: 1.3vh;
+    right: 4vw;
+    width: 4vh;
+    height: 4vh;
+}
+#footerimg1 img{
+    width: 4vh;
+    height: 4vh;
+}
+#footerimg2{
+    display: inline-block;
+    position: relative;
+    position: absolute;
+    bottom: 1.3vh;
+    right: 1vw;
+    width: 4vh;
+    height: 4vh;
+}
+#footerimg2 img{
+    width: 4vh;
+    height: 4vh;
+}
